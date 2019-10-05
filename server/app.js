@@ -4,7 +4,7 @@ const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-mongoose.connect('mongodb+srv://MyUser:tanisha2502@cluster0-vonld.mongodb.net/test?retryWrites=true&w=majority');
+mongoose.connect('/*mongo db url*/');
 mongoose.connection.once('open', () => {
     console.log('running db');
 })
